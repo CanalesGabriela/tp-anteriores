@@ -1,0 +1,143 @@
+*{
+	padding:  0;
+	margin:  0;
+}
+
+/* selector ( puede ser una Etiqueta/ Clase /Id que es el mas importante, sobreescribe todo- Propiedad- valor*/
+header{
+	
+	min-height: 50px;
+	display: flex;
+	justify-content: space-between;
+	background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+h1{
+	font-family: sans-serif;
+	align-items: center;
+	font-size: 0.5cm;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+
+
+	
+	
+
+.textito {
+	margin-left: 100px;
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 20px;
+
+	
+}
+
+
+
+nav ul li {
+	display: inline-block;
+	
+}
+
+nav ul li a{
+			text-decoration: none;
+			color: black;
+			font-size: 0.5cm;
+		
+}
+
+.imagenes-1 {
+	margin-top: 50px;
+	margin-left: 300px;
+
+}
+
+
+
+.imagenes{
+	margin-top: 50px;
+	margin-left: 200px;
+		}
+
+.orden {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+
+
+footer{
+	
+	min-height: 50px;
+	padding: 50px;
+	margin-top: 450px;
+	margin-bottom: 0;
+	background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+nav{
+	display: flex;
+	align-items: center;
+	margin-top: 0px;
+}
+
+ul{
+	display: flex;
+}
+ul li a {
+	margin: 1cm;
+}
+
+
+
+.contacto{
+	display: flex;
+	height: 100px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	font-size: 25px;
+}
+
+/*para definir filas y columnas indicar medidas*/
+.box-img {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-auto-rows:250px;
+	grid-gap: 20px;
+	
+}
+
+	
+
+
+@media screen and (max-width:800px) {
+	.galeria-container{
+		width: 95%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+		grid-template-rows: 200px;
+	}
+	
+}
